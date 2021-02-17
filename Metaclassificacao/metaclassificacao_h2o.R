@@ -8,7 +8,7 @@ h2o::h2o.init(nthreads = -1,
               max_mem_size = '12g')
 
 # Mineracao dos dados
-dados <- read.csv("D:/Projetos_em_R/Machine_Learning/Dados/echocardiogram.csv")
+dados <- read.csv("D:/Projetos_em_R/Machine_Learning_h2o/Dados/echocardiogram.csv")
 tibble::glimpse(dados)
 
 dados[,"age"] <- base::as.numeric(dados[,"age"])

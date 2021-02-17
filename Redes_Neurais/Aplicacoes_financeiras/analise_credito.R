@@ -2,7 +2,7 @@ library(caTools)
 library(h2o)
 
 # Importacao dos dados
-dados <- read.csv("D:/Projetos_em_R/Machine_Learning/Dados/credit_data.csv")
+dados <- read.csv("D:/Projetos_em_R/Machine_Learning_h2o/Dados/credit_data.csv")
 dados$clientid <- NULL
 view(dados)
 

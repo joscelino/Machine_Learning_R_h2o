@@ -1,7 +1,7 @@
 library(h2o)
 h2o.init()
 
-imp = read.csv("D:/Projetos_em_R/Machine_Learning/Dados/Churn_treino.csv", sep = ";")
+imp = read.csv("D:/Projetos_em_R/Machine_Learning_h2o/Dados/Churn_treino.csv", sep = ";")
 
 # Pega nome da variavel dependente que deve estar na ultima coluna
 y = colnames(imp[length(imp)])

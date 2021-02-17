@@ -4,8 +4,9 @@ library(h2o)
 h2o::h2o.init(nthreads = -1,
               max_mem_size = '12g')
 
+
 # Mineracao dos dados
-dados <- h2o::h2o.importFile(path = "D:/Projetos_em_R/Machine_Learning/Dados/Dataset_Classificacao_Contratacao_TP.csv",
+dados <- h2o::h2o.importFile(path = "D:/Projetos_em_R/Machine_Learning_h2o/Dados/Dataset_Classificacao_Contratacao_TP.csv",
                              header = TRUE, sep = ";")
 
 # Breve estatistica

@@ -6,7 +6,7 @@ h2o::h2o.init(nthreads = -1,
               max_mem_size = '12g')
 
 # Mineracao dos dados
-dados <- readxl::read_excel("D:/Projetos_em_R/Machine_Learning/Dados/Dataset_Classificacao_RiscoCredito.xlsx")
+dados <- readxl::read_excel("D:/Projetos_em_R/Machine_Learning_h2o/Dados/Dataset_Classificacao_RiscoCredito.xlsx")
 base::anyNA(dados)
 
 dados$Estado_Civil <- base::factor(dados$Estado_Civil)
