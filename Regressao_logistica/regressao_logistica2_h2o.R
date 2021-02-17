@@ -96,5 +96,6 @@ perf
 # Perda do modelo AUC (Grau de convergencia do modelo - quanto menor, melhor)
 h2o::h2o.auc(perf)
 
+
 # Encerra conexao
 h2o::h2o.shutdown(prompt = FALSE)
