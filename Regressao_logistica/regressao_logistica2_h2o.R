@@ -7,6 +7,8 @@ seed <- 42
 
 # Inicia a conexao com o servidor h20
 h2o::h2o.init(nthreads = -1,
+              ip = "localhost",
+              port = 54321,
               max_mem_size = '12g')
 
 ?h2o::h2o.glm
@@ -41,6 +43,7 @@ layman_brothers.split <-
   h2o::h2o.splitFrame(data = layman_brothers.hex,
                       ratios = 0.75, # Entrada pode ser vetor
                       seed = seed)
+
 # Lista quantidade de dados separados
 base::sapply(layman_brothers.split, function(x) nrow(x))
 
