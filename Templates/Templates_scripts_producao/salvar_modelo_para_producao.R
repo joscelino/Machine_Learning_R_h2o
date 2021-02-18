@@ -11,7 +11,7 @@ ROOT_DIR <- getwd()
 
 # Diretorio do projeto
 PROJECT_DIR <- 
-  '   '
+  'Classificacao'
 
 
 artifact_path <- 
