@@ -5,10 +5,29 @@ library(tibble)
 
 # Inicia a conexao com o servidor h20
 h2o::h2o.init(nthreads = -1,
+              ip = "localhost",
+              port = 54321,
               max_mem_size = '12g')
 
+# Diretorio raiz
+ROOT_DIR <- getwd()
+
+# Diretorio do arquivo
+ARQ_DIR <- 
+  'Dados'
+
+# Nome do arquivo
+ARQ_NOME <- 'echocardiogram.csv'
+
+# Path do arquivo a ser carregado
+arquivo_path <- 
+  file.path(ROOT_DIR,
+            ARQ_DIR,
+            ARQ_NOME
+  )
+
 # Mineracao dos dados
-dados <- read.csv("D:/Projetos_em_R/Machine_Learning_h2o/Dados/echocardiogram.csv")
+dados <- read.csv(arquivo_path)
 tibble::glimpse(dados)
 
 dados[,"age"] <- base::as.numeric(dados[,"age"])
